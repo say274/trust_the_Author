@@ -33,7 +33,6 @@
     .title {
       font-family: "Playfair Display", serif;
       font-style: italic;
-      font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400;
       letter-spacing: 0.04em;
       max-width: 90vw;
@@ -45,7 +44,14 @@
       margin: 0.4em 0;
     }
 
-    .title .final-line {
+    /* smaller lines */
+    .small-line {
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+    }
+
+    /* main message */
+    .final-line {
+      font-size: clamp(1.5rem, 3vw, 2rem);
       margin-top: 0.9em;
     }
 
@@ -53,14 +59,14 @@
       max-width: 90vw;
       max-height: 70vh;
       border-radius: 14px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
     }
 
     button {
       margin-top: 0.5rem;
       padding: 0.6rem 1.4rem;
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255,255,255,0.25);
       background: transparent;
       color: #ddd;
       font-family: inherit;
@@ -69,7 +75,7 @@
     }
 
     button:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,0.08);
     }
 
     .monogram {
@@ -79,7 +85,7 @@
       transform: translateX(-50%);
       font-size: 0.75rem;
       letter-spacing: 0.35em;
-      color: rgba(255, 255, 255, 0.55);
+      color: rgba(255,255,255,0.55);
       font-family: "Cormorant Garamond", serif;
     }
   </style>
@@ -88,9 +94,10 @@
 <body>
 
   <div class="title">
-    <p>Dearest Fiona,</p>
-    <p>When your chapter feels too heavy,</p>
-    <p>remember to trust the Author.</p>
+    <p class="small-line">Dearest Fiona,</p>
+    <p class="small-line">When your chapter feels too heavy,</p>
+    <p class="small-line">remember to trust the Author.</p>
+
     <p class="final-line">Your story is still unfinished.</p>
   </div>
 
