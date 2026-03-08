@@ -12,18 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <style>
-.monogram {
-  position: fixed;
-  bottom: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  font-size: 0.75rem;
-  letter-spacing: 0.35em;
-  color: rgba(255,255,255,0.55);
-
-  font-family: "Cormorant Garamond", serif;
-}
     body {
       margin: 0;
       min-height: 100vh;
@@ -38,6 +26,8 @@
 
       font-family: "Cormorant Garamond", serif;
       text-align: center;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
     }
 
     .title {
@@ -51,18 +41,26 @@
       color: #f0f0f0;
     }
 
+    .title p {
+      margin: 0.4em 0;
+    }
+
+    .title .final-line {
+      margin-top: 0.9em;
+    }
+
     img {
       max-width: 90vw;
       max-height: 70vh;
       border-radius: 14px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
     }
 
     button {
       margin-top: 0.5rem;
       padding: 0.6rem 1.4rem;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       background: transparent;
       color: #ddd;
       font-family: inherit;
@@ -71,7 +69,18 @@
     }
 
     button:hover {
-      background: rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .monogram {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.75rem;
+      letter-spacing: 0.35em;
+      color: rgba(255, 255, 255, 0.55);
+      font-family: "Cormorant Garamond", serif;
     }
   </style>
 </head>
@@ -79,11 +88,12 @@
 <body>
 
   <div class="title">
-    <p>Dearest Fiona</p>
-<p>When your chapter feels too heavy</p>
-<p>Remember to trust the Author</p>
-<p>Your story is still unfinished.</p>
+    <p>Dearest Fiona,</p>
+    <p>When your chapter feels too heavy,</p>
+    <p>remember to trust the Author.</p>
+    <p class="final-line">Your story is still unfinished.</p>
   </div>
+
   <div class="monogram">S · H</div>
 
   <img id="image" alt="A moment of rest" />
